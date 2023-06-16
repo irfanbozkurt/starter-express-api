@@ -1,13 +1,13 @@
 var express = require("express");
 var fs = require("fs");
 const https = require('https')
-var cors = require('cors')
+
 var bodyParser = require("body-parser");
 var app = express();
 
 let transactions = {}
 
-app.use(cors())
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
